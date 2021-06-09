@@ -1,0 +1,105 @@
+
+@keyframes kanan {
+    0% {-webkit-transform:translateX(20px);
+    }
+
+    50%{-webkit-transform:translateX(-20px);
+    }
+
+    100%{-webkit-transform:translateX(20px);
+        z-index:200;
+    }
+}
+
+@-webkit-keyframes kanan {
+    0% {-webkit-transform:translateX(20px);
+    }
+
+    50%{-webkit-transform:translateX(-20px);
+    }
+
+    100%{-webkit-transform:translateX(20px);
+        z-index:200;
+    }
+}
+@-moz-keyframes kanan {
+    0% {-moz-transform:translateX(20px);
+    }
+
+    50%{-moz-transform:translateX(-20px);
+    }
+
+    100%{-moz-transform:translateX(20px);
+        z-index:200;
+    }
+}
+@-o-keyframes kanan {
+    0% {-o-transform:translateX(20px);
+    }
+
+    50%{-o-transform:translateX(-20px);
+    }
+
+    100%{-o-transform:translateX(20px);
+        z-index:200;
+    }
+}
+
+.card-enter-active {
+    animation-name: card-in;
+    animation-duration: .1s;
+}
+.card-leave-active {
+    animation-name: card-out;
+    animation-duration: .1s;
+}
+@keyframes card-in {
+    0% {
+      transform: translate3d(0, 2%, 0);
+    }
+    50% {
+      transform: translate3d(0, 1%, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes card-out {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, 1%, 0);
+    }
+    100% {
+      transform: translate3d(0, 2%, 0);
+    }
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
